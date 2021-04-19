@@ -13,12 +13,13 @@
     </head>
     <body>
         <form>
+            <h1 style="display: none;" id="h1">SIGN UP</h1>
             <label for="signupEmail">email</label>
             <input type="email" id="signupEmail" required />
 
             <label for="signupPassword">password</label>
             <input type="password" id="signupPassword" required />
-            <input type="submit" value="Submit"/>
+            <input type="submit" value="Submit" id="signUpBtn" onsubmit="signUpWithEmailPassword()"/>
         </form>
 
 
@@ -83,7 +84,8 @@
             });
              // [END auth_send_email_verification]
             }
-                
+            
+        
         
         </script>
     </body>
